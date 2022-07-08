@@ -1,0 +1,115 @@
+/*Aqui nós temos a folha de estilo principal do nosso site*/
+/*colors: #9E9E9E, #5F645F, #3C4349, #282828, #0F1114*/
+body{
+    background-image: linear-gradient(to top, #A9E2E4, #A7BCCD, #DAE8E8);
+    background-attachment: fixed;
+    font-family: garamond;
+    font-size: 250%;
+    margin: 0%;
+}
+header{
+    background:linear-gradient(45deg, #63A385, #6BA3A3, #A7BCCD);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1%;
+    font-size: 70%;
+    box-shadow: -10px 10px 20px #282828;
+}
+.header-item{
+    text-align: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+a{
+    text-decoration: none;
+    color: #0F1114;
+}
+.progress{
+    background-color: #DAE8E8;
+    color: #0F1114;
+    padding: 1% 2% 1% 2%;
+    border-radius: 40px;
+    box-shadow: -5px 2.5px 20px #0F1114;
+}
+.header-item:hover{
+    font-weight: bold;
+}
+h1{
+    font-size: 40px;
+    text-align: center;
+}
+main{
+    background-color: #75B6C9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-width: 80%;
+    margin: 5%;
+    border-radius: 15px;
+    height: 60%;
+    box-shadow: -10px 10px 20px #282828;
+}
+.box{
+    background-color: #DAE8E8;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    min-width: 30%;
+    height: 10%;
+    box-shadow: -5px 2.5px 20px #0F1114;
+}
+/*Aqui nós temos uma folha de estilo secundária que garante a responsividade do site em celulares*/
+@media screen and (max-width: 600px) {
+    body{
+        background-color: whitesmoke;
+        font-family: garamond;   
+    }
+    header{
+        box-shadow: 1px -5px 20px 4px #1F1F1F;
+        background-color: #282828;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 2%;
+        font-size: 40%;
+    }
+    .progress{
+        color: black;
+        padding: 1% 2% 1% 2%;
+        border-radius: 40px;
+        box-shadow: -2px 2px 5px black;
+    }
+    .header-item{
+        text-align: center;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        line-height: 100%;
+    }
+    .header-item:hover{
+        font-weight: normal;
+    }
+    h1{
+        font-size: 80%;
+        text-align: center;
+    }
+    main{
+        color: black;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 5%;
+        border-radius: 15px;
+        box-shadow: -5px 5px 10px #0F1114;
+        box-shadow: -2px 2px 5px black;
+    }
+    .box{
+        font-size: 70%;
+        text-align: center;
+        margin: 20px;
+        padding: 20px;
+        max-width: 400px;
+        min-width: 70%;
+        box-shadow: -2px 2px 5px black;
+    }
+}
